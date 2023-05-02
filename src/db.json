@@ -1,0 +1,124 @@
+{
+  "list": [
+    {
+      "id": "1",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+    {
+      "id": "2",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+     {
+      "id": "3",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+        {
+      "id": "4",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+    {
+      "id": "5",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+     {
+      "id": "6",
+      "title": "",
+      "category": "sale",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+    {
+      "id": "7",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+     {
+      "id": "8",
+      "title": "",
+      "category": "renta",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+        {
+      "id": "9",
+      "title": "",
+      "category": "renta",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+    {
+      "id": "10",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+     {
+      "id": "11",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    },
+    {
+      "id": "12",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": " "
+    }
+  ]
+}
