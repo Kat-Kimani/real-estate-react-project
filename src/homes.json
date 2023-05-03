@@ -1,0 +1,158 @@
+{
+    "homes": [
+    {
+      "id": 1,
+      "title": "Beautiful Home with a View",
+      "location": "Limuru",
+      "category": "sale",
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "livingroom": true,
+      "images": [
+        "https://i.pinimg.com/originals/1a/08/61/1a086149d16bd2efddc89c53acb6bd78.jpg",
+        "https://st.hzcdn.com/simgs/pictures/living-rooms/california-dreaming-westmade-homes-img~49d1e3d00eb25369_14-6752-1-b83fde5.jpg",
+         "https://hips.hearstapps.com/hmg-prod/images/edc030122davis-005-1644012258.jpeg",
+        "https://thumbs.dreamstime.com/b/hotel-room-25969958.jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Modern Loft with City Views",
+      "location": "Kilimani",
+      "category": "sale",
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "livingroom": true,
+      "images": [
+        "https://cdn.home-designing.com/wp-content/uploads/2013/05/modern-city-loft-6.jpeg",
+        "https://i.pinimg.com/originals/c8/df/0a/c8df0a82d0c5153b898171a01982c04b.jpg",
+        "https://cdn.decoist.com/wp-content/uploads/2018/08/White-mixed-with-gray-is-a-popular-color-combination-in-the-small-contemporary-bathroom.jpg",
+        "https://i.pinimg.com/736x/18/60/8d/18608d5ace81206bf34452e4422e9db6.jpg"
+      ]
+    },
+
+{
+  "id": 3,
+  "title": "Cozy Cottage House by the Lake",
+  "location": "Naivasha",
+  "category": "rent",
+  "bedrooms": 2,
+  "bathrooms": 1,
+  "livingroom": true,
+  "images": [
+    "https://i.pinimg.com/originals/51/36/07/513607bb420670667b18900ae91597a9.jpg",
+    "https://www.architectureartdesigns.com/wp-content/uploads/2014/10/16-Homely-Rustic-Bathroom-Ideas-To-Warm-You-Up-This-Winter-0.jpg",
+    "https://i.pinimg.com/originals/39/ef/63/39ef63fc099ec7945176518e7936d1a8.jpg",
+    "https://houseandhome.com/wp-content/uploads/2022/05/2021-1028-HHM-51_HH_JanFeb22_25.jpg"
+   
+  ]
+},
+{
+  "id": 4,
+  "title": "Luxury Villa with Private Pool",
+  "location": "Diani",
+  "category": "sale",
+  "bedrooms": 5,
+  "bathrooms": 4,
+  "livingroom": true,
+  "images": [
+    "https://i.pinimg.com/originals/5b/5a/6d/5b5a6dc396d66b4b021d6ab057f1fe22.jpg",
+    "https://i.pinimg.com/736x/cf/f3/d5/cff3d5eba0efd9b18a0fbb35e2960292.jpg",
+    "https://i.pinimg.com/originals/46/1e/c8/461ec8af9c9dc415a58c45d3c351febd.jpg",
+    "https://i.pinimg.com/564x/aa/37/f5/aa37f548bc36444e1fe3293a2a3d7183.jpg"
+
+  ]
+},
+{
+  "id": 5,
+  "title": "Luxury Penthouse with Rooftop Terrace",
+  "location": "Westlands",
+  "category": "rent",
+  "bedrooms": 3,
+  "bathrooms": 1,
+  "livingroom": true,
+  "images": [
+    "https://i.pinimg.com/564x/3e/9d/7d/3e9d7d2bcd9f0c263fa83b1c32c26600.jpg",
+    "https://i.pinimg.com/originals/f0/99/fe/f099fecca0e8943f2ad26f6328cd8afa.jpg",
+    "https://i.pinimg.com/736x/3a/92/b6/3a92b6c696a17a5bacad32d788f43ac9.jpg",
+    "https://i.pinimg.com/736x/b5/23/10/b523106839ed3fe8fa6827e8ac742b6a.jpg"
+   
+  ]
+},
+{
+  "id": 6,
+  "title": "Beachfront Apartment with Ocean Views",
+  "location": "Mombasa",
+  "category": "sale",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "livingroom": true,
+  "images": [
+    "https://i.pinimg.com/originals/98/3f/18/983f18d363b0ddbbd9b999002c88766b.png",
+    "https://i.pinimg.com/originals/00/86/f5/0086f531a233f98cdf391659ec4efd72.jpg",
+    "https://i.pinimg.com/originals/67/37/2f/67372f92b437591e467b0a493cff3d6e.jpg",
+    "https://i.pinimg.com/736x/4e/94/50/4e9450aab563df0bb9b08dcd0f32fa6f.jpg"
+  ]
+},
+    {
+      "id": "7",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+       "status": "Available"
+    },
+     {
+      "id": "8",
+      "title": "",
+      "category": "renta",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+       "status": "Available"
+    },
+        {
+      "id": "9",
+      "title": "",
+      "category": "renta",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+       "status": "Available"
+    },
+    {
+      "id": "10",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+       "status": "Available"
+    },
+     {
+      "id": "11",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+       "status": "Available"
+    },
+    {
+      "id": "12",
+      "title": "",
+      "category": "rental",
+      "location": "",
+      "description": " ",
+      "features": " ",
+      "image": " ",
+      "status": "Available"
+    }
+  ]
+}

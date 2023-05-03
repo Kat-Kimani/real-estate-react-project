@@ -1,19 +1,25 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
-function HomeItem() {
+function HomesItem({ home }) {
+  console.log(home);
   return (
-    <div>
+    <div classname="homes-container">
       <h2>{home.title}</h2>
       <p>Bedrooms: {home.bedrooms}</p>
       <p>Bathrooms: {home.bathrooms}</p>
       <p>Living Room: {home.livingroom ? "Yes" : "No"}</p>
-      <div>
+      {/* <div>
         {home.images.map((image, index) => (
           <img key={index} src={image} alt={`Image ${index + 1}`} />
         ))}
-      </div>
+      </div> */}
+      {home.images
+        ? home.images.map((image, index) => (
+            <img key={index} src={image} alt={` ${index + 1}`} />
+          ))
+        : null}
     </div>
   );
 }
 
-export default HomeItem;
+export default HomesItem;

@@ -1,12 +1,11 @@
 import React from "react";
-import Header from "./Header.js";
-import HomesList from "./HomesList.js";
-function App() {
-  //const [homes, setHomes] = UseState([]);
 
+import HomesList from "./HomesList.js";
+import "./style.css";
+
+function App() {
   return (
     <div>
-      <Header />
       <HomesList />
     </div>
   );
