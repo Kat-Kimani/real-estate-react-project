@@ -1,7 +1,15 @@
 import React from "react";
-
+import Header from "./Header.js";
+import HomesList from "./HomesList.js";
 function App() {
-  return <div></div>;
+  //const [homes, setHomes] = UseState([]);
+
+  return (
+    <div>
+      <Header />
+      <HomesList />
+    </div>
+  );
 }
 
 export default App;
