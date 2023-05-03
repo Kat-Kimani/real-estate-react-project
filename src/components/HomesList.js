@@ -15,7 +15,7 @@ function HomesList() {
   }, []);
   console.log(homes); // add this console log
   return (
-    <div>
+    <div className="homes-container">
       {homes.map((home) => (
         <HomesItem key={home.id} home={home} />
       ))}

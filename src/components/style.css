@@ -1,0 +1,47 @@
+/* .homes-container {
+display: flex;
+
+flex-direction: wrap;
+
+
+}
+
+.homes-container .homes-item{
+width: 20%;
+border:1px solid black;
+margin: 1%;
+
+} */
+
+/* .homes-container .homes-item img{
+width: 100%;
+height: 60%;
+
+
+} */
+
+.homes-item-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+.homes-item-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.love-button {
+    background-color: grey;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.love-button.loved {
+    background-color: red;
+}
