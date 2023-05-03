@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import HomesList from "./HomesList.js";
 import "./style.css";
 import NavBar from "./NavBar.js";
+import Header from "./Header.js";
 
 function App() {
   const [homes, setHomes] = useState([]);
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div>
+      <Header />
       <NavBar
         onCategoryClick={onCategoryClick}
         homes={homes}
