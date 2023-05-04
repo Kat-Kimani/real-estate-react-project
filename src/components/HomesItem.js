@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeart } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import UpdateButton from "./UpdateButton";
 function HomesItem({ home }) {
   const [loveCount, setLoveCount] = useState(0);
@@ -25,6 +25,9 @@ function HomesItem({ home }) {
   function handleUpdate(id){ 
    // return <UpdateButton id={id}/>
    console.log(id)
+  }
+  function handleDelete(id){
+    console.log(id)
   }
   return (
     <div className="homes-item">
@@ -58,7 +61,7 @@ function HomesItem({ home }) {
         <button type="submit">Submit</button>
       </form>
       <button type="submit"onClick={handleUpdate(home.id)}>Update</button>
-
+      <button type="submit"onClick={handleDelete(home.id)}>Delete</button>
     </div>
   );
 }
