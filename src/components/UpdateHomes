@@ -1,0 +1,43 @@
+import { useState } from 'react';
+
+function UpdateHomes(props) {
+  const { homes, onUpdateHome } = props;
+  const [editingHomeId, setEditingHomeId] = useState(null);
+
+  const handleEditClick = (homeId) => {
+    setEditingHomeId(homeId);
+  };
+
+  const handleSaveClick = (home) => {
+    onUpdateHome(home);
+    setEditingHomeId(null);
+  };
+
+  return (
+    <div>
+      {homes.map((home) => (
+        <div key={home.id}>
+          {editingHomeId === home.id ? (
+            <div>
+              <input
+                type="text"
+                value={home.address}
+                onChange={(e) =>
+                  onUpdateHome({ ...home, address: e.target.value })
+                }
+              />
+              <button onClick={() => handleSaveClick(home)}>Save</button>
+            </div>
+          ) : (
+            <div>
+              <span>{home.address}</span>
+              <button onClick={() => handleEditClick(home.id)}>Edit</button>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  );
+}
+
+export default UpdateHomes;
