@@ -1,39 +1,51 @@
 import React, { useState, useEffect } from "react";
-import HomesForm from "./HomesForm";
 
-const HomesList = () => {
+import HomesList from "./HomesList.js";
+import "./style.css";
+import NavBar from "./NavBar.js";
+import Header from "./Header.js";
+
+
+function App() {
   const [homes, setHomes] = useState([]);
+  const [category, setCategory] = useState("all");
+  //const [filteredHomes, setFilteredHomes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/homes")
-      .then((response) => response.json())
-      .then((data) => setHomes(data));
+    fetch("http://localhost:4300/homes")
+      .then((resp) => resp.json())
+      .then((homes) => {
+        setHomes(homes);
+      });
   }, []);
+
+  const onCategoryClick = (category) => {
+    setCategory(category);
+  };
+
+  function handleSearch(filteredHomes) {
+    setHomes(filteredHomes);
+  }
+
+  const filteredHomes =
+    category === "all"
+      ? homes
+      : homes.filter((home) => home.category === category);
 
   return (
   
 
     <div>
-      {homes.map((home) => (
-        <div key={home.id}>
-          <h2>{home.title}</h2>
-          <p>Location: {home.location}</p>
-          <p>Category: {home.category}</p>
-          <p>Bedrooms: {home.bedrooms}</p>
-          <p>Bathrooms: {home.bathrooms}</p>
-          <p>Living Room: {home.livingroom ? "Yes" : "No"}</p>
-          <div>
-            {home.images.map((image) => (
-              <img key={image} src={image} alt="home" width="200" height="150" />
-            ))}
-            
-          </div>
-        </div>
-      ))}
-<HomesForm/>
-
+      <Header />
+      <NavBar
+        onCategoryClick={onCategoryClick}
+        homes={homes}
+        onSearch={handleSearch}
+      />
+      <HomesList homes={filteredHomes} />
+      <HomesForm />
     </div>
   );
 };
 
-export default HomesList;
+export default App;
