@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 
 function HomesItem({ home }) {
+  //console.log(home);
   const [loveCount, setLoveCount] = useState(0);
   const [isLoved, setIsLoved] = useState(false);
   const [comment, setComment] = useState("");
@@ -25,7 +26,12 @@ function HomesItem({ home }) {
   return (
     <div className="homes-item">
       <div className="homes-item-images">
-        {home.images
+        {/* {home.images
+          ? home.images.map((image, index) => (
+              <img key={index} src={image} alt={` ${index + 1}`} />
+            ))
+          : null} */}
+        {home && Array.isArray(home.images)
           ? home.images.map((image, index) => (
               <img key={index} src={image} alt={` ${index + 1}`} />
             ))

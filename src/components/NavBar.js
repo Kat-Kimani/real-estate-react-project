@@ -1,6 +1,6 @@
 import React from "react";
 
-function NavBar({ onCategoryClick, homes, onSearch }) {
+function NavBar({ onCategoryClick, homes, onSearch, onAddHomeClick }) {
   const handleCategoryClick = (category) => {
     onCategoryClick(category);
   };
@@ -31,7 +31,11 @@ function NavBar({ onCategoryClick, homes, onSearch }) {
         <button id="category" onClick={() => handleCategoryClick("rental")}>
           For Rent
         </button>
+        <button id="category" onClick={() => onAddHomeClick()}>
+          Add Home
+        </button>
       </div>
+
       <form onSubmit={handleSearch} className="search-form">
         <input type="text" name="search" placeholder="Search Homes" />
         <button id="category" type="submit">
