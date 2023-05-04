@@ -4,6 +4,7 @@ import HomesList from "./HomesList.js";
 import "./style.css";
 import NavBar from "./NavBar.js";
 import Header from "./Header.js";
+import HomesForm from "./HomesForm";
 
 
 function App() {
