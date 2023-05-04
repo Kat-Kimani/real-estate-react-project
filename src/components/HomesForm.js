@@ -17,7 +17,8 @@ function HomesForm() {
   };
 
   return (
-    <div>
+    <div style={{textAlign:'center'}}>
+      <h2>Add Home</h2>
       <form onSubmit={handleSubmit}>
         <label>
           Category:
