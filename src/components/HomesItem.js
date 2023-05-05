@@ -1,12 +1,17 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
+import HomesUpdateForm from "./HomesUpdateForm";
 
-function HomesItem({ home }) {
-  //console.log(home);
+function HomesItem({ home, onUpdateHome, onDeleteHome }) {
+  const id = home.id;
+  console.log(id);
+
+  // console.log(id);
   const [loveCount, setLoveCount] = useState(0);
   const [isLoved, setIsLoved] = useState(false);
   const [comment, setComment] = useState("");
+  const [showUpdateForm, setShowUpdateForm] = useState(false);
 
   function handleLoveClick() {
     if (isLoved) {
@@ -23,14 +28,21 @@ function HomesItem({ home }) {
     const comment = formData.get("comment");
     setComment(comment); // Store the comment in state
   };
+
+  function handleUpdateClick() {
+    setShowUpdateForm(true);
+  }
+
+  function handleDeleteClick() {
+    // add fetch request
+    fetch(`http://localhost:4300/homes/${home.id}`, {
+      method: "DELETE",
+    }).then(() => onDeleteHome(home.id));
+  }
+
   return (
     <div className="homes-item">
       <div className="homes-item-images">
-        {/* {home.images
-          ? home.images.map((image, index) => (
-              <img key={index} src={image} alt={` ${index + 1}`} />
-            ))
-          : null} */}
         {home && Array.isArray(home.images)
           ? home.images.map((image, index) => (
               <img key={index} src={image} alt={` ${index + 1}`} />
@@ -58,8 +70,17 @@ function HomesItem({ home }) {
           Comment:
           <input type="text" name="comment" />
         </label>
-        <button type="submit">Submit</button>
+        <button id="btn" type="submit">
+          Submit
+        </button>
       </form>
+      <div id="btn">
+        <button onClick={handleUpdateClick}>Update</button>
+        <button onClick={handleDeleteClick}>Delete</button>
+      </div>
+      {showUpdateForm && (
+        <HomesUpdateForm home={home} onUpdateHome={onUpdateHome} />
+      )}
     </div>
   );
 }

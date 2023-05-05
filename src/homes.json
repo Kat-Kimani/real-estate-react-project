@@ -1,51 +1,6 @@
 {
   "homes": [
     {
-      "id": 1,
-      "title": "Beautiful Home with a View",
-      "location": "Limuru",
-      "category": "sale",
-      "bedrooms": 4,
-      "bathrooms": 2,
-      "livingroom": true,
-      "images": [
-        "https://i.pinimg.com/originals/1a/08/61/1a086149d16bd2efddc89c53acb6bd78.jpg",
-        "https://st.hzcdn.com/simgs/pictures/living-rooms/california-dreaming-westmade-homes-img~49d1e3d00eb25369_14-6752-1-b83fde5.jpg",
-        "https://hips.hearstapps.com/hmg-prod/images/edc030122davis-005-1644012258.jpeg",
-        "https://thumbs.dreamstime.com/b/hotel-room-25969958.jpg"
-      ]
-    },
-    {
-      "id": 2,
-      "title": "Modern Loft with City Views",
-      "location": "Kilimani",
-      "category": "rental",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "livingroom": true,
-      "images": [
-        "https://cdn.home-designing.com/wp-content/uploads/2013/05/modern-city-loft-6.jpeg",
-        "https://i.pinimg.com/originals/c8/df/0a/c8df0a82d0c5153b898171a01982c04b.jpg",
-        "https://cdn.decoist.com/wp-content/uploads/2018/08/White-mixed-with-gray-is-a-popular-color-combination-in-the-small-contemporary-bathroom.jpg",
-        "https://i.pinimg.com/736x/18/60/8d/18608d5ace81206bf34452e4422e9db6.jpg"
-      ]
-    },
-    {
-      "id": 3,
-      "title": "Cozy Cottage House by the Lake",
-      "location": "Naivasha",
-      "category": "rental",
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "livingroom": true,
-      "images": [
-        "https://i.pinimg.com/originals/51/36/07/513607bb420670667b18900ae91597a9.jpg",
-        "https://www.architectureartdesigns.com/wp-content/uploads/2014/10/16-Homely-Rustic-Bathroom-Ideas-To-Warm-You-Up-This-Winter-0.jpg",
-        "https://i.pinimg.com/originals/39/ef/63/39ef63fc099ec7945176518e7936d1a8.jpg",
-        "https://houseandhome.com/wp-content/uploads/2022/05/2021-1028-HHM-51_HH_JanFeb22_25.jpg"
-      ]
-    },
-    {
       "id": 4,
       "title": "Luxury Villa with Private Pool",
       "location": "Diani",
@@ -95,8 +50,8 @@
       "title": "Superb Apartment next to CBD",
       "category": "rental",
       "location": "Upperhill",
-      "bedroom": "3 ",
-      "bathroom": "3 ",
+      "bedrooms": "3 ",
+      "bathrooms": "3 ",
       "livingroom": "true ",
       "images": [
         "https://i.pinimg.com/564x/4d/88/f0/4d88f0b639a0f4cb43737f1ad510f370.jpg",
@@ -111,8 +66,8 @@
       "title": "Condo with Heated Pool",
       "category": "home",
       "location": "Malindi",
-      "bedroom": "5 ",
-      "bathroom": "3 ",
+      "bedrooms": "5 ",
+      "bathrooms": "2",
       "livingroom": "true",
       "images": [
         "https://i.pinimg.com/564x/a3/f0/1b/a3f01bee56970ce02fb16b9830138495.jpg",
@@ -123,28 +78,12 @@
       "status": "Sold"
     },
     {
-      "id": "10",
-      "title": "Truck House with Park Views",
-      "category": "rental",
-      "location": "Kajiado",
-      "bedroom": " 1",
-      "bathroom": " 1",
-      "livingroom": "true",
-      "images": [
-        "https://i.pinimg.com/564x/76/d7/26/76d7264f81991796ce1719fd70c13041.jpg",
-        "https://i.pinimg.com/564x/86/30/b5/8630b5c9d35ad13dd109645493189fc9.jpg",
-        "https://i.pinimg.com/564x/8a/ff/0c/8aff0cb24cf654d18baeacb929bc1931.jpg",
-        "https://i.pinimg.com/564x/d6/5c/82/d65c829f3b95214f8f187f63a359598a.jpg"
-      ],
-      "status": "Available"
-    },
-    {
       "id": "11",
       "title": "Serene Farmhouse with Lakeside view",
       "category": "sale",
       "location": "Kisumu",
-      "bedroom": "1 ",
-      "bathroom": " 1",
+      "bedrooms": "1 ",
+      "bathrooms": " 1",
       "livingroom": "true",
       "images": [
         "https://i.pinimg.com/736x/de/d7/a4/ded7a4505c8ec1f4deec3421fc434751.jpg",
@@ -159,8 +98,8 @@
       "title": "Beautiful Townhouse ",
       "category": "sale",
       "location": "Karen",
-      "bedroom": "3 ",
-      "bathroom": " 2",
+      "bedrooms": "3 ",
+      "bathrooms": " 2",
       "livingroom": "true",
       "images": [
         "https://i.pinimg.com/564x/62/9a/12/629a12723f98b5354f91cc44b80b485b.jpg",
@@ -169,39 +108,6 @@
         "https://i.pinimg.com/564x/82/1f/ba/821fbad2c63c29c73d92b15cfdcca1e8.jpg"
       ],
       "status": "Available"
-    },
-    {
-      "title": "Masai Mara Home",
-      "category": "sale",
-      "location": "Mara",
-      "bedroom": "",
-      "bathroom": "",
-      "livingroom": true,
-      "images": "https://cdn.kiwicollection.com/media/property/PR003366/xl/003366-11-private%20house%20-%20views%20from%20terrace%203.jpg?cb=1457473509",
-      "status": "Available",
-      "id": "TR3G2eU"
-    },
-    {
-      "title": "Masai Mara Home",
-      "category": "sale",
-      "location": "Mara",
-      "bedroom": "",
-      "bathroom": "",
-      "livingroom": true,
-      "images": "https://cdn.kiwicollection.com/media/property/PR003366/xl/003366-11-private%20house%20-%20views%20from%20terrace%203.jpg?cb=1457473509",
-      "status": "Available",
-      "id": "7FY-AbI"
-    },
-    {
-      "title": "mara",
-      "category": "rental",
-      "location": "Mara",
-      "bedroom": "",
-      "bathroom": "",
-      "livingroom": "",
-      "images": "https://cdn.kiwicollection.com/media/property/PR003366/xl/003366-11-private%20house%20-%20views%20from%20terrace%203.jpg?cb=1457473509",
-      "status": "Available",
-      "id": "qP5QuNc"
     }
   ]
 }
