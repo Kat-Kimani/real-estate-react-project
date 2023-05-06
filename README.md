@@ -13,7 +13,7 @@ Delete a home from the list
 
 Installation
 Clone the repository: git clone https://github.com/Kat-Kimani/real-estate-react-project
-Install dependencies: cd my-awesome-app && npm install
+Install dependencies: cd real-estate-react-project && npm install
 Start the server: npm start
 Open the application in your web browser at http://localhost:3000
 
