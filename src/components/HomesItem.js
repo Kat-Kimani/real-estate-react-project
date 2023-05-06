@@ -12,6 +12,7 @@ function HomesItem({ home, onUpdateHome, onDeleteHome }) {
   const [isLoved, setIsLoved] = useState(false);
   const [comment, setComment] = useState("");
   const [showUpdateForm, setShowUpdateForm] = useState(false);
+  const [showMore, setShowMore] = useState(false);
 
   function handleLoveClick() {
     if (isLoved) {
@@ -41,47 +42,85 @@ function HomesItem({ home, onUpdateHome, onDeleteHome }) {
   }
 
   return (
+    // <div className="homes-maincont">
     <div className="homes-item">
-      <div className="homes-item-images">
+      {/* <div className="homes-item-images">
         {home && Array.isArray(home.images)
           ? home.images.map((image, index) => (
               <img key={index} src={image} alt={` ${index + 1}`} />
             ))
           : null}
+      </div> */}
+
+      <div className="homes-item-images">
+        {home && Array.isArray(home.images) ? (
+          <div>
+            <img
+              className="dominant-image"
+              src={home.images[0]}
+              alt="Dominant"
+            />
+            <div className="small-images">
+              {home.images.slice(1, 4).map((image, index) => (
+                <img key={index} src={image} alt={`Small ${index + 1}`} />
+              ))}
+            </div>
+          </div>
+        ) : null}
       </div>
-      <h2>{home.title}</h2>
-      <p>Bedrooms: {home.bedrooms}</p>
-      <p>Bathrooms: {home.bathrooms}</p>
-      <p>Living Room: {home.livingroom ? "Yes" : "No"}</p>
-      {/* Render the comment if there is one */}
-      {comment && <p>{comment}</p>}
-      <div className="homes-item-actions">
-        <button
-          className={`love-button ${isLoved ? "loved" : ""}`}
-          onClick={handleLoveClick}
-        >
-          <FontAwesomeIcon icon={faHeart} />
-          <span className="love-count">{loveCount}</span>
+
+      <div id="details">
+        <h2>{home.title}</h2>
+        <button id="btn-showmore" onClick={() => setShowMore(true)}>
+          Show More
         </button>
+        {/* <p>Bedrooms: {home.bedrooms}</p>
+          <p>Bathrooms: {home.bathrooms}</p>
+          <p>Living Room: {home.livingroom ? "Yes" : "No"}</p> */}
+
+        {showMore && (
+          <>
+            <p>Bedrooms: {home.bedrooms}</p>
+            <p>Bathrooms: {home.bathrooms}</p>
+            <p>Living Room: {home.livingroom ? "Yes" : "No"}</p>
+            <p>Status: {home.status}</p>
+          </>
+        )}
+        {/* Render the comment if there is one */}
+        {comment && <p>{comment}</p>}
+        <div className="homes-item-actions">
+          <button
+            className={`love-button ${isLoved ? "loved" : ""}`}
+            onClick={handleLoveClick}
+          >
+            <FontAwesomeIcon icon={faHeart} />
+            <span className="love-count">{loveCount}</span>
+          </button>
+        </div>
+        {/* Form to submit a comment */}
+        <form onSubmit={handleSubmit}>
+          <label>
+            Comment:
+            <input type="text" name="comment" />
+          </label>
+          <button id="btn" type="submit">
+            Submit
+          </button>
+        </form>
+        <div id="btn-cont">
+          <button id="btn-update" onClick={handleUpdateClick}>
+            Update
+          </button>
+          <button id="btn-delete" onClick={handleDeleteClick}>
+            Delete
+          </button>
+        </div>
+        {showUpdateForm && (
+          <HomesUpdateForm home={home} onUpdateHome={onUpdateHome} />
+        )}
       </div>
-      {/* Form to submit a comment */}
-      <form onSubmit={handleSubmit}>
-        <label>
-          Comment:
-          <input type="text" name="comment" />
-        </label>
-        <button id="btn" type="submit">
-          Submit
-        </button>
-      </form>
-      <div id="btn">
-        <button onClick={handleUpdateClick}>Update</button>
-        <button onClick={handleDeleteClick}>Delete</button>
-      </div>
-      {showUpdateForm && (
-        <HomesUpdateForm home={home} onUpdateHome={onUpdateHome} />
-      )}
     </div>
+    // </div>
   );
 }
 
