@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+Welcome to Beautiful Homes App!
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a web application built with React and Node.js that allows users to view, add, update, and delete homes for sale.
 
-## Available Scripts
+Features
+View a list of homes with images, titles, and basic details to enable you shop around for a beautiful home or property.
+Filter homes by category (e.g. single-family, townhome, condo)
+Search for homes by title or description
+Love homes and see the number of loves they receive
+Add a new home for sale/rent
+Update an existing home details and images
+Delete a home from the list
 
-In the project directory, you can run:
+Installation
+Clone the repository: git clone https://github.com/Kat-Kimani/real-estate-react-project
+Install dependencies: cd my-awesome-app && npm install
+Start the server: npm start
+Open the application in your web browser at http://localhost:3000
 
-### `npm start`
+Dependencies
+React
+Node.js
+Express
+MongoDB
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Components
+App
+This is the main component of the application. It renders the Header, NavBar, HomesList, and HomesForm components. It also manages the state of the homes array, category filter, and handles updates and additions to the homes array.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+HomesItem
+This component renders a single home item in the HomesList component. It displays the home's details and allows the user to add comments, like the home, and update or delete the home.
 
-### `npm test`
+HomesList
+This component renders all Homes in the App component. It displays the home's details and allows the user to add comments, like the home, and update or delete the home.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+HomesForm gives a form that enables a user to add a new home to the web application.
 
-### `npm run build`
+HomesUpdateForm gives a form to enable update the details of each form
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+NavBar
+This component renders the For Sale , For Rent and Search Buttons. These buttons enable the user to filter the homes according to category required on clicking them.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+onCategoryClick
+This function is passed down to the NavBar component as a prop. It is called when a category filter button is clicked, and updates the category state in the App component to filter the homes displayed in the HomesList.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+handleSearch
+This function is also passed down to the NavBar component as a prop. It is called when a search query is submitted, and filters the homes in the homes array based on the search query. The filtered homes are then passed to the HomesList component to be displayed.
 
-### `npm run eject`
+filteredHomes
+This is a computed value based on the homes array and the category state. It filters the homes array based on the category filter and returns the filtered homes.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+handleAddHome
+This function is passed down to the HomesForm component as a prop. It is called when the user submits the form to add a new home. It adds the new home to the homes array in the App component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+handleLoveClick
+This function is called when the user clicks on the heart icon to like a home. It updates the isLoved and loveCount states in the HomesItem component.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+handleSubmit
+This function is called when the user submits a comment for a home. It extracts the comment from the form data and sets it as the comment state in the HomesItem component.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+handleUpdateClick
+This function is called when the user clicks the "Update" button for a home. It sets the showUpdateForm state to true, which displays the HomesUpdateForm component.
 
-## Learn More
+handleDeleteClick
+This function is called when the user clicks the "Delete" button for a home. It sends a DELETE request to the server to delete the home from the database, and removes the home from the homes array in the App component.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Contributing
+Contributions are welcome! If you find a bug or have a suggestion for a new feature, please open an issue or submit a pull request.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License
+This project is licensed under the MIT License.
